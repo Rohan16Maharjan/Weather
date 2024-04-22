@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="context">
+				<h1>Weather App</h1>
+
+				<form class="content">
+					<input id="searching" type="text" placeholder="Enter City" />
+					<input id="myButton" type="button" value="Search" />
+
+					<img id="weather-icon" alt="" />
+					<div id="weather-info"></div>
+				</form>
+			</div>
+		</div>
+		<div class="chart">
+			<canvas width="400" height="400" id="myChart"></canvas>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
