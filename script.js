@@ -6,12 +6,12 @@ const button = document.getElementById('myButton');
 
 button.addEventListener('click', function () {
 	let cityName = document.getElementById('searching').value;
-	API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}
+	API_URL = `https://api.opensjdfsjgdfsweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}
 	`;
 	API_URL1 = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&cnt=15&appid=${API_KEY}&units=metric`;
 	if (!cityName) {
-		alert('Add the location');
 		return;
+		alert('Add the location');
 	}
 	weatherApi();
 });
